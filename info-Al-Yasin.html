@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css"
+    />
+    <title>Al Yasin</title>
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/736x/44/9b/d1/449bd15aa3d6f6a5f52ee097a96e89f9.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="infostyle.css" />
+  </head>
+
+  <body id="main-con">
+    <div class="container-fluid">
+      <div class="container-fluid" id="header-con">
+        <nav
+          class="
+            row
+            justify-content-between
+            align-items-center
+            justify-content-lg-around
+          "
+        >
+          <span class="p-3 col-2" id="register-btn">عضویت در خبرنامه</span>
+          <span class="p-3 col-2" id="menu-icon">
+            <i class="fas fa-bars" id="bar-icon"></i>
+            <span class="welcome">خوش آمدید</span>
+          </span>
+        </nav>
+        <div class="container" id="title-con">
+          <div class="card-2">
+            <h1 class="p-3" id="title">زیارت آل یاسین</h1>
+          </div>
+        </div>
+        <!-- برای قسمت سلکتد باید کد های انتخاب شده را بنویسی . می توانی از css های تگ a استفاده کنی -->
+        <nav
+          class="navbar navbar-expand-lg navbar-light menu-nav"
+          dir="rtl"
+          id="menu"
+        >
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a
+                  class="nav-link active m-2 p-3"
+                  aria-current="page"
+                  href="index-Al-Yasin.html"
+                  >صفحه اصلی</a
+                >
+                <a class="nav-link m-2 p-3" href="data-All-Yasin.html">فایل های صوتی و تصویری</a>
+                <a class="nav-link m-2 p-3" href="call-All-Yasin.html">تماس با ما</a>
+                <a class="action-btn nav-link active m-2 p-3" href="info-Al-Yasin.html"
+                  >درباره ی ما</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="container info">
+          <div class="container w-75" id="con-info">
+            <div
+              class="
+                container
+                row-cols-2
+                p-3
+                justify-content-center
+                align-content-center
+                create-button
+              "
+              id="main-prof"
+            >
+              <div
+                class="
+                  img-prof
+                  circle-frame
+                  justify-content-center
+                  align-content-center
+                "
+              >
+                <img src="/image/profile.jpeg" alt="" />
+              </div>
+              <div class="col-12 title-profile type" dir="rtl">
+                سلام ، محسن پیری هستم طراح و برنامه نویس این سایت . از نوجوانی
+                به کامپیوتر و فناوری های دیجیتال علاقه داشتم. دانشجوی مهندسی
+                کامپیوتر دانشگاه تهران هستم و در تیم های مختلفی مهارت های خود
+                را ارتقا می دهم.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container goal" style=" text-align: center;">
+          <div class="container w-75 button--three goal-con align-items-center row"  style="background-color: white;" dir="rtl">
+            <div class="col" id="title-con">
+              <i class="fas fa-question-circle align-items-center"></i>
+              هدف از ساخت
+            </div>
+            <hr>
+            <div class="container row" id="goal" dir="rtl">
+              این سایت بعد از تحقیق در متون دینی به منظور اهمیت بالای زیارت آل یاسین در جهت توسعه و ترویج محتوا های دینی ساخته شد. و سعی شده است به صورت تخصصی به این دعای با برکت بپردازیم . امید است با عنایت پروردگار و دعای خیرتان ، منابع بیشتر و بهتری را برای شما همراهان عزیز فراهم کنیم.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="popup-reg" style="display: none">
+        <!-- you must start from-->
+        <div class="container h-auto w-auto" id="reg-con">
+          <i class="fas fa-times" id="close-pop-icon"></i>
+          <div class="container p-3 w-75" id="reg-title">
+            ثبت نام در خبرنامه
+          </div>
+          <br />
+          <p id="success" style="display: none">
+            با تشکر ، ثبت نام شما با موفقیت انجام شد
+          </p>
+          <p id="text1">با عضویت در خبرنامه از طرح های جدید ما مطلع شوید</p>
+          <p id="error"></p>
+          <div class="container" id="form-field">
+            <div class="form-con row-cols-4">
+              <input
+                type="text"
+                class="input col-10 col-md-6 p-3"
+                dir="rtl"
+                placeholder="نام و نام خانوادگی"
+                id="name"
+              />
+
+              <input
+                type="email"
+                class="input col-10 col-md-6 p-3"
+                dir="rtl"
+                placeholder="ایمیل"
+                id="email"
+              />
+
+              <input
+                type="tel"
+                class="input col-10 col-md-6 p-3"
+                dir="rtl"
+                placeholder="تلفن همراه"
+                id="phone"
+                minlength="11"
+                maxlength="11"
+              />
+
+              <input
+                type="submit"
+                value="ثبت اطلاعات"
+                class="input col-10 col-md-6 p-3 submit"
+                id="submit"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div cal="container" id="phone-menu-con">
+        <i class="fas fa-times" id="close"></i>
+        <div class="mobile-nav">
+          <ul>
+            <li><a href="index-Al-Yasin.html">صفحه اصلی</a></li>
+            <li><a href="data-All-Yasin.html">فایل های صوتی و تصویری</a></li>
+            <li><a href="call-All-Yasin.html">تماس با ما</a></li>
+            <li class="action-btn"><a href="info-Al-Yasin.html">درباره ما</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <footer class="text-center text-white" style="margin: 100px 0px 10px 0px">
+        <!-- Grid container -->
+        <div class="container pt-4" id="footer">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Google -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="mailto:hajmohsenpiri@gmail.com"
+              target="_blank"
+              title="My Email"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-google"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.instagram.com/hajmohsenpiri/&ved=2ahUKEwiAsp_H4KjyAhVCCmMBHQljCh0Qjjh6BAgDEAE&usg=AOvVaw3Tu3_EbwJZs3w6cCz1uwZ5"
+              target="_blank"
+              title="My Instagram acc"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://t.me/joinchat/_UBOgo1kqiQ4YTE0"
+              target="_blank"
+              title="Telegram Channel"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-telegram"></i>
+            </a>
+            <!-- Github -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://github.com/Mohsen-graphyy"
+              title="My Github acc"
+              target="_blank"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center text-dark p-3 footerstyle container"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2021 Copyright:
+          <a class="text-dark" href="http://hajmohsenpiri.ir" target="_blank"
+            >HajMohsenPiri.ir</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/js/all.min.js"></script>
+    <script src="infoscript.js"></script>
+  </body>
+</html>
