@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="style-Al-Yasin.css" />
   </head>
   <script src="https://kit.fontawesome.com/e22089d0ca.js" crossorigin="anonymous"></script>
+  <link href='https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vazir-font/30.0.0/font-face.css" integrity="sha512-ZHFuHiK3EA1uh2tx7nB0j9HyXR/IAFW24KVNFGjY8QIjtDKHmcowjUyObXF40wYrG25+kECHEbH8rL+HbvRwYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <body id="main-con">
     <div class="container-fluid">
       <div class="container-fluid" id="header-con">
@@ -130,31 +133,59 @@
           </ul>
         </div>
       </div>
-      <div class="container-fluid" id="popup-reg" style="display: none;">  <!-- you must start from-->
-          <div class="container h-auto w-auto" id="reg-con">
-            <i class="fas fa-times" id="close-pop-icon" ></i>
-            <div class="container p-3 w-75" id="reg-title">
-              ثبت نام در خبرنامه
-            </div>
-            <br>
-            <p id="success" style="display: none;">با تشکر ، ثبت نام شما با موفقیت انجام شد</p>
-            <p id="text1">با عضویت در خبرنامه از طرح های جدید ما مطلع شوید</p>
-            <p id="error"></p>
-            <div class="container" id="form-field">
-              <div class="form-con row-cols-4">
-                
-                <input type="text" class="input col-10 col-md-6 p-3" dir="rtl" placeholder="نام و نام خانوادگی" id="name">
-                
-                <input type="email" class="input col-10 col-md-6 p-3" dir="rtl" placeholder="ایمیل" id="email">
-                
-                <input type="tel" class="input col-10 col-md-6 p-3" dir="rtl" placeholder="تلفن همراه" id="phone" minlength="11" maxlength="11">
-
-                <input type="submit" value="ثبت اطلاعات" class="input col-10 col-md-6 p-3" id="submit">
-              </div>
-            </div>
+      <div class="container-fluid" id="popup-reg" style="display: none">
+        <!-- you must start from-->
+        <div class="container h-auto w-auto" id="reg-con">
+          <i class="fas fa-times" id="close-pop-icon"></i>
+          <div class="container p-3 w-75" id="reg-title">
+            ثبت نام در خبرنامه
           </div>
+          <br />
+          <p id="success" style="display: none">
+            با تشکر ، ثبت نام شما با موفقیت انجام شد
+          </p>
+          <p id="text1">با عضویت در خبرنامه از طرح های جدید ما مطلع شوید</p>
+          <p id="error"></p>
+          <form class="container" id="form-field" action="https://send.pageclip.co/rxH3BroYEVRs4V7vkJleqowToHNPDJYI" class="pageclip-form" method="post">
+            <div class="form-con row-cols-4">
+              <input
+                type="text"
+                class="input col-10 col-md-6 p-3"
+                dir="rtl"
+                name="name"
+                placeholder="نام و نام خانوادگی"
+                id="name"
+              />
+
+              <input
+                type="email"
+                class="input col-10 col-md-6 p-3"
+                dir="rtl"
+                name="email"
+                placeholder="ایمیل"
+                id="email"
+              />
+
+              <input
+                type="tel"
+                class="input col-10 col-md-6 p-3"
+                dir="rtl"
+                name="phone"
+                placeholder="تلفن همراه"
+                id="phone"
+                minlength="11"
+                maxlength="11"
+              />
+
+              <input
+                type="submit"
+                value="ثبت اطلاعات"
+                class="input col-10 col-md-6 p-3 submit pageclip-form__submit"
+                id="submit"
+              />
+            </div>
+          </form>
         </div>
-        
       </div>
       <div class="container textbox-con" dir="rtl">
         <p id="start">
@@ -274,5 +305,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/js/all.min.js"></script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   </body>
 </html>
